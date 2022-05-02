@@ -15,6 +15,7 @@
 		847D942A281EDA600063AF5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D9428281EDA600063AF5F /* LaunchScreen.storyboard */; };
 		847D946A282007E80063AF5F /* CategoryChoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D9469282007E80063AF5F /* CategoryChoiseViewController.swift */; };
 		847D946E282027650063AF5F /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946D282027650063AF5F /* RulesViewController.swift */; };
+		847D947028207D8C0063AF5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946F28207D8C0063AF5F /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		847D942B281EDA600063AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847D9469282007E80063AF5F /* CategoryChoiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChoiseViewController.swift; sourceTree = "<group>"; };
 		847D946D282027650063AF5F /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		847D946F28207D8C0063AF5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				847D9421281EDA5E0063AF5F /* WelcomeViewController.swift */,
 				847D9469282007E80063AF5F /* CategoryChoiseViewController.swift */,
 				847D946D282027650063AF5F /* RulesViewController.swift */,
+				847D946F28207D8C0063AF5F /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				847D9422281EDA5E0063AF5F /* WelcomeViewController.swift in Sources */,
 				847D946A282007E80063AF5F /* CategoryChoiseViewController.swift in Sources */,
 				847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */,
+				847D947028207D8C0063AF5F /* GameViewController.swift in Sources */,
 				847D9420281EDA5E0063AF5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
