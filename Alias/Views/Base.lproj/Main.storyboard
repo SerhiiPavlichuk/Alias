@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
         </scene>
-        <!--Category Choise View Controller-->
+        <!--Category Choice View Controller-->
         <scene sceneID="wYt-ra-7Hq">
             <objects>
-                <viewController id="bKe-iS-MWV" customClass="CategoryChoiseViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bKe-iS-MWV" customClass="CategoryChoiceViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kci-Nw-Udj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
