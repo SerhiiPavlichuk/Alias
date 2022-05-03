@@ -16,6 +16,7 @@
 		847D946A282007E80063AF5F /* CategoryChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D9469282007E80063AF5F /* CategoryChoiceViewController.swift */; };
 		847D946E282027650063AF5F /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946D282027650063AF5F /* RulesViewController.swift */; };
 		847D947028207D8C0063AF5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946F28207D8C0063AF5F /* GameViewController.swift */; };
+		DB0226FB2821755000202873 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FA2821755000202873 /* Rules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		847D9469282007E80063AF5F /* CategoryChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryChoiceViewController.swift; sourceTree = "<group>"; };
 		847D946D282027650063AF5F /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		847D946F28207D8C0063AF5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DB0226FA2821755000202873 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,9 @@
 				847D942B281EDA600063AF5F /* Info.plist */,
 				847D941D281EDA5E0063AF5F /* AppDelegate.swift */,
 				847D941F281EDA5E0063AF5F /* SceneDelegate.swift */,
-				847D9466282006E50063AF5F /* Controllers */,
+				DB0226F92821726400202873 /* Model */,
 				847D9467282006F00063AF5F /* Views */,
+				847D9466282006E50063AF5F /* Controllers */,
 				847D9468282007000063AF5F /* SupportingFiles */,
 			);
 			path = Alias;
@@ -98,6 +101,14 @@
 				847D9428281EDA600063AF5F /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DB0226F92821726400202873 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB0226FA2821755000202873 /* Rules.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				847D946A282007E80063AF5F /* CategoryChoiceViewController.swift in Sources */,
 				847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */,
 				847D947028207D8C0063AF5F /* GameViewController.swift in Sources */,
+				DB0226FB2821755000202873 /* Rules.swift in Sources */,
 				847D9420281EDA5E0063AF5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

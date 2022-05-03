@@ -7,17 +7,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Rules View Controller-->
         <scene sceneID="gaP-GD-vwp">
             <objects>
-                <viewController id="a8n-Pq-1d9" sceneMemberID="viewController">
+                <viewController id="a8n-Pq-1d9" customClass="RulesViewController" customModule="Alias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tdz-Ql-5t7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-hG-tyt">
+                                <rect key="frame" x="183" y="88" width="48" height="774"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vf3-gZ-L6z"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vf3-gZ-L6z" secondAttribute="leading" id="4fy-fN-dEF"/>
+                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="top" secondItem="Vf3-gZ-L6z" secondAttribute="top" id="CLJ-Wa-uij"/>
+                            <constraint firstItem="Vf3-gZ-L6z" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ad8-hG-tyt" secondAttribute="trailing" id="Pef-mO-JNQ"/>
+                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="centerX" secondItem="Tdz-Ql-5t7" secondAttribute="centerX" id="VoP-Qf-kwp"/>
+                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="bottom" secondItem="Vf3-gZ-L6z" secondAttribute="bottom" id="l4q-mR-g4s"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Kk-ND-3cf"/>
+                    <connections>
+                        <outlet property="RulesLabel" destination="Ad8-hG-tyt" id="vC3-E6-NhD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckf-e0-End" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
