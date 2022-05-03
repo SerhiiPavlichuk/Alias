@@ -17,6 +17,7 @@
 		847D946E282027650063AF5F /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946D282027650063AF5F /* RulesViewController.swift */; };
 		847D947028207D8C0063AF5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946F28207D8C0063AF5F /* GameViewController.swift */; };
 		DB0226FB2821755000202873 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FA2821755000202873 /* Rules.swift */; };
+		DB0226FD2821A60D00202873 /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FC2821A60C00202873 /* JokeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		847D946D282027650063AF5F /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		847D946F28207D8C0063AF5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DB0226FA2821755000202873 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		DB0226FC2821A60C00202873 /* JokeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DB0226FA2821755000202873 /* Rules.swift */,
+				DB0226FC2821A60C00202873 /* JokeManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0226FD2821A60D00202873 /* JokeManager.swift in Sources */,
 				847D946E282027650063AF5F /* RulesViewController.swift in Sources */,
 				847D9422281EDA5E0063AF5F /* WelcomeViewController.swift in Sources */,
 				847D946A282007E80063AF5F /* CategoryChoiceViewController.swift in Sources */,

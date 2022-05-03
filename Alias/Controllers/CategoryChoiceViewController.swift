@@ -11,7 +11,6 @@ class CategoryChoiceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+    
     }
 }
