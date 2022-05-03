@@ -169,6 +169,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jI1-EM-0r0"/>
+                    <connections>
+                        <segue destination="r8a-ji-1lX" kind="show" identifier="goToGame" id="LAV-lN-9Ih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lg2-hl-64g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="2Os-eI-UZX">
-                                <rect key="frame" x="20" y="64" width="374" height="137.5"/>
+                                <rect key="frame" x="20" y="108" width="374" height="137.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apj-FI-Ugl">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="76.5"/>
@@ -250,6 +253,7 @@
                             <constraint firstItem="2Os-eI-UZX" firstAttribute="top" secondItem="OmQ-a1-1y0" secondAttribute="top" constant="20" id="xzT-98-dCs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4qN-QI-uE6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hf-xj-gnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
