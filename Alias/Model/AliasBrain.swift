@@ -11,9 +11,9 @@ struct AliasBrain {
     
     let actors = ["Chris Evans", "Robert Downey, Jr.", "Jennifer Lawrence", "Channing Tatum", "George Clooney", "Johnny Depp", "Margot Robbie", "Jared Leto", "Robert De Niro", "Jack Nicholson", "Marlon Brando", "Denzel Washington", "Meryl Streep", "Tom Hanks", "Leonardo DiCaprio", "Morgan Freeman", "Charles Chaplin", "Al Pacino", "Halle Berry", "James Dean"]
     
-    let countries = ["China", "Czech Republic", "Egypt", "Finland", "France", "Honduras", "Japan", "Malawi", "Nepal", "Poland", "Spain", "Tajikistan", "Ukraine", "Yemen", "Zimbabwe", "South Africa", "Senegal", "Rwanda", "Qatar", "Niger"]
+    let brainStorm = ["Worcestershire", "Supercalifragilisticexpialidocious", "Onomatopoeia", "Phenomenon", "Sesquipedalian", "Sixth", "Rural", "Irregardless", "Disinterested", "Nonplussed", "adumbrate", "camaraderie", "contrite", "exhort", "intimation", "ostracism", "preponderance", "sanctimonious", "solipsism", "Niger"]
     
-    let biggestCities = ["Tokyo", "Jakarta", "Delhi", "Manila", "Seoul", "Shanghai", "Karachi", "Beijing", "New York", "Guangzhou", "Sao Paulo", "Mexico City", "Mumbai", "Osaka", "Dhaka", "Cairo", "Los Angeles", "Bangkok", "Kolkata", "Buenos Aires"]
+    let friendly = ["person", "woman", "child", "time", "year", "week", "day", "way", "thing", "world", "hand", "part", "eye", "place", "work", "case", "government", "company", "number", "group"]
     
-    let companies = ["Apple", "Saudi Aramco", "Microsoft", "Google", "Amazon", "Tesla", "Berkshire Hathaway", "Facebook", "Johnson & Johnson", "NVIDIA", "Visa", "Mastercard", "Bank of America", "Coca-Cola", "Toyota", "Walt Disney", "Oracle", "Nike", "Intel", "Salesforce"]
+    let optimal = ["between", "always", "important", "more", "different", "another", "family", "song", "sound", "number", "people", "watch", "began", "thought", "came", "come", "make", "run", "let", "cut"]
 }
