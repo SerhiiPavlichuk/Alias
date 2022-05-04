@@ -14,4 +14,8 @@ class CategoryChoiceViewController: UIViewController {
         
 
     }
+    @IBAction func anyButtonPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToGame", sender: self)
+    }
 }
