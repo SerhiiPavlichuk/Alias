@@ -14,7 +14,5 @@ class WelcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-let url = "https://app.fakejson.com/q/i8P2VXBe?token=JBCOygjS36c78V0gv9Zquw"
-
 }
 
