@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				847D9421281EDA5E0063AF5F /* WelcomeViewController.swift */,
-				847D9469282007E80063AF5F /* CategoryChoiceViewController.swift */,
 				847D946D282027650063AF5F /* RulesViewController.swift */,
+				847D9469282007E80063AF5F /* CategoryChoiceViewController.swift */,
 				847D946F28207D8C0063AF5F /* GameViewController.swift */,
 			);
 			path = Controllers;
