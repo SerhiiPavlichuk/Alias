@@ -14,28 +14,10 @@
                     <view key="view" contentMode="scaleToFill" id="Tdz-Ql-5t7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-hG-tyt">
-                                <rect key="frame" x="183" y="88" width="48" height="774"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vf3-gZ-L6z"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vf3-gZ-L6z" secondAttribute="leading" id="4fy-fN-dEF"/>
-                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="top" secondItem="Vf3-gZ-L6z" secondAttribute="top" id="CLJ-Wa-uij"/>
-                            <constraint firstItem="Vf3-gZ-L6z" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ad8-hG-tyt" secondAttribute="trailing" id="Pef-mO-JNQ"/>
-                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="centerX" secondItem="Tdz-Ql-5t7" secondAttribute="centerX" id="VoP-Qf-kwp"/>
-                            <constraint firstItem="Ad8-hG-tyt" firstAttribute="bottom" secondItem="Vf3-gZ-L6z" secondAttribute="bottom" id="l4q-mR-g4s"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Kk-ND-3cf"/>
-                    <connections>
-                        <outlet property="RulesLabel" destination="Ad8-hG-tyt" id="vC3-E6-NhD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckf-e0-End" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,9 +45,6 @@
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="a8n-Pq-1d9" kind="push" id="gg5-Ik-MOs"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsv-9X-9Ya">
                                         <rect key="frame" x="0.0" y="112" width="354" height="62"/>
