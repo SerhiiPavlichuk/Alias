@@ -225,6 +225,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="NextRoundPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="Dw9-W2-Nsb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0O-3z-YPs">
                                         <rect key="frame" x="0.0" y="50" width="374" height="50"/>
@@ -234,6 +237,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="NextRoundPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="Srq-18-06I"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-xN-VQa">
                                         <rect key="frame" x="0.0" y="100" width="374" height="50"/>
@@ -243,6 +249,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="NextRoundPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="U18-69-HHR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

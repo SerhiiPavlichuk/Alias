@@ -1,7 +1,8 @@
 
 import Foundation
 protocol JokeManagerDelegate {
-    func didUpdateJoke(joke: JokeModel )
+    func didUpdateJoke(_ jokeManager: JokeManager, joke: JokeModel)
+    func didFailWithError(error: Error)
 }
 
 struct JokeManager {
@@ -17,7 +18,7 @@ struct JokeManager {
                 }
                 if let safeData = data {
                     if let joke = self.parseJSON(jokeData: safeData) {
-                        delegate?.didUpdateJoke(joke: joke)
+                        delegate?.didUpdateJoke(self, joke: joke)
                     }
                 }
             }

@@ -11,9 +11,14 @@ import UIKit
 class GameViewController: UIViewController {
     @IBOutlet weak var randomWordLabel: UILabel!
 
+    @IBAction func nextRoundPressed(_ sender: UIButton) {   //экшен для перехода на алерт с шуткой
+        didUpdateJoke(jokeManager: JokeManager, joke: JokeModel)
+        
+    }
+    
     var categoryName = ""
     var aliasBrain = AliasBrain()
-    
+    var jokeManager = JokeManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +27,18 @@ class GameViewController: UIViewController {
 
     }
    
+}
+
+extension GameViewController: JokeManagerDelegate {
+    
+    func didUpdateJoke(_ jokeManager: JokeManager, joke: JokeModel) {  // метод вывода шутки в консоль
+        DispatchQueue.main.async {
+            print(joke.firstStringJoke)
+            print(joke.secondStringJoke)
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
 }
