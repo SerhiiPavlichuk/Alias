@@ -1,20 +1,15 @@
-//
-//  JokeManager.swift
-//  Alias
-//
-//  Created by Oleg Mazuro on 3.05.22.
-//
 
 import Foundation
+protocol JokeManagerDelegate {
+    func didUpdateJoke(joke: JokeModel )
+}
 
 struct JokeManager {
     
-    func fetchJoke() {
-        let urlString = "https://joke.deno.dev/" // нужна ли эта функция? может лучше адрес сайта вставить в функцию performRequest?
-        performRequest(urlString: urlString)
-    }
+    var delegate: JokeManagerDelegate?
     
-    func performRequest(urlString: String) {
+    func performRequest() {
+        let urlString = "https://joke.deno.dev/"
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
@@ -23,24 +18,27 @@ struct JokeManager {
                     return
                 }
                 if let safeData = data {
-                    let dataString = String(data: safeData, encoding: .utf8)
+                    if let joke = self.parseJSON(jokeData: safeData) {
+                        delegate?.didUpdateJoke(joke: joke)
+                    }
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(jokeData: Data) {
+    func parseJSON(jokeData: Data) -> JokeModel? {
         let decoder = JSONDecoder()
         do {
             let decoderData = try decoder.decode(JokeData.self, from: jokeData)
-            let firstStringJoke = decoderData.setup
-            let secondStringJoke = decoderData.punchline
+            let question = decoderData.setup
+            let answer = decoderData.punchline
             
-            print(firstStringJoke) //поверка вывода первой строки шутки в консоль
-            print(secondStringJoke) //поверка вывода второй строки шутки в консоль
+            let joke = JokeModel(firstStringJoke: question, secondStringJoke: answer)
+            return joke
         } catch {
             print(error)
+            return nil
         }
     }
 }
