@@ -25,6 +25,7 @@ struct JokeManager {
         }
     }
     
+    
     func parseJSON(jokeData: Data) -> JokeModel? {
         let decoder = JSONDecoder()
         do {
