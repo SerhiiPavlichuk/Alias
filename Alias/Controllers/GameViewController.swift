@@ -9,9 +9,13 @@ import Foundation
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    var categoryName: String?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+   
 }
