@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845A22DD28244D450079B34D /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DA28244D450079B34D /* JokeManager.swift */; };
+		845A22DE28244D450079B34D /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DB28244D450079B34D /* JokeModel.swift */; };
+		845A22DF28244D450079B34D /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DC28244D450079B34D /* JokeData.swift */; };
 		847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D941D281EDA5E0063AF5F /* AppDelegate.swift */; };
 		847D9420281EDA5E0063AF5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D941F281EDA5E0063AF5F /* SceneDelegate.swift */; };
 		847D9422281EDA5E0063AF5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D9421281EDA5E0063AF5F /* WelcomeViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845A22DA28244D450079B34D /* JokeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
+		845A22DB28244D450079B34D /* JokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		845A22DC28244D450079B34D /* JokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 		847D941A281EDA5E0063AF5F /* Alias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D941D281EDA5E0063AF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847D941F281EDA5E0063AF5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,9 @@
 		DB0226F92821726400202873 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				845A22DC28244D450079B34D /* JokeData.swift */,
+				845A22DA28244D450079B34D /* JokeManager.swift */,
+				845A22DB28244D450079B34D /* JokeModel.swift */,
 				8A5760672822F01C0051E2EE /* AliasBrain.swift */,
 				DB0226FA2821755000202873 /* Rules.swift */,
 				847D94712822443A0063AF5F /* JokePresent.swift */,
@@ -188,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845A22DD28244D450079B34D /* JokeManager.swift in Sources */,
 				847D946E282027650063AF5F /* RulesViewController.swift in Sources */,
 				847D9422281EDA5E0063AF5F /* WelcomeViewController.swift in Sources */,
+				845A22DE28244D450079B34D /* JokeModel.swift in Sources */,
+				845A22DF28244D450079B34D /* JokeData.swift in Sources */,
 				8A5760682822F01C0051E2EE /* AliasBrain.swift in Sources */,
 				847D946A282007E80063AF5F /* CategoryChoiceViewController.swift in Sources */,
 				847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */,
