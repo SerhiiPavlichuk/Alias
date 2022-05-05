@@ -18,6 +18,7 @@
 		847D947028207D8C0063AF5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D946F28207D8C0063AF5F /* GameViewController.swift */; };
 		DB0226FB2821755000202873 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FA2821755000202873 /* Rules.swift */; };
 		DB0226FD2821A60D00202873 /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FC2821A60C00202873 /* JokeManager.swift */; };
+		DBFE915D282423F40076077E /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFE915C282423F40076077E /* JokeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		847D946F28207D8C0063AF5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DB0226FA2821755000202873 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 		DB0226FC2821A60C00202873 /* JokeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
+		DBFE915C282423F40076077E /* JokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				DB0226FA2821755000202873 /* Rules.swift */,
+				DBFE915C282423F40076077E /* JokeData.swift */,
 				DB0226FC2821A60C00202873 /* JokeManager.swift */,
 			);
 			path = Model;
@@ -192,6 +195,7 @@
 				847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */,
 				847D947028207D8C0063AF5F /* GameViewController.swift in Sources */,
 				DB0226FB2821755000202873 /* Rules.swift in Sources */,
+				DBFE915D282423F40076077E /* JokeData.swift in Sources */,
 				847D9420281EDA5E0063AF5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
