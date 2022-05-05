@@ -5,9 +5,7 @@ protocol JokeManagerDelegate {
 }
 
 struct JokeManager {
-    
     var delegate: JokeManagerDelegate?
-    
     func performRequest() {
         let urlString = "https://joke.deno.dev/"
         if let url = URL(string: urlString) {
