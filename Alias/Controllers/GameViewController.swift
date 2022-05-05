@@ -9,12 +9,16 @@ import Foundation
 import UIKit
 
 class GameViewController: UIViewController {
-    
-    var categoryName: String?
+    @IBOutlet weak var randomWordLabel: UILabel!
+
+    var categoryName = ""
+    var aliasBrain = AliasBrain()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        randomWordLabel.text = aliasBrain.updateWord(with: categoryName)
 
     }
    
