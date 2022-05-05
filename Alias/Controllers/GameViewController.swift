@@ -34,8 +34,6 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        randomWordLabel.text = aliasBrain.updateWord(with: categoryName)
-        
         progressBar.progress = 0.0
         getTimer()
         
@@ -63,7 +61,7 @@ class GameViewController: UIViewController {
     
     func update() {
         scoreLabel.text = "Score: \(score)"
-        
+        aliasBrain.updateWord(with: categoryName)
         
         player.play()
     }
@@ -73,6 +71,8 @@ class GameViewController: UIViewController {
     @IBAction func rightButtonPressed(_ sender: UIButton) {
         score += 1
         
+        randomWordLabel.text = aliasBrain.word
+        
         let url = Bundle.main.url(forResource: "correct", withExtension: "mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
         
@@ -81,6 +81,9 @@ class GameViewController: UIViewController {
     
     @IBAction func skipButtonPressed(_ sender: UIButton) {
         score -= 1
+        
+        randomWordLabel.text = aliasBrain.word
+        
         if score < 0 {
             score = 0
         }
