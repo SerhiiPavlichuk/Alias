@@ -8,6 +8,8 @@
 import Foundation
 
 struct AliasBrain {
+
+    var word = ""
     
     let actors = ["Chris Evans", "Robert Downey, Jr.", "Jennifer Lawrence", "Channing Tatum", "George Clooney", "Johnny Depp", "Margot Robbie", "Jared Leto", "Robert De Niro", "Jack Nicholson", "Marlon Brando", "Denzel Washington", "Meryl Streep", "Tom Hanks", "Leonardo DiCaprio", "Morgan Freeman", "Charles Chaplin", "Al Pacino", "Halle Berry", "James Dean"]
     
@@ -16,4 +18,19 @@ struct AliasBrain {
     let friendly = ["person", "woman", "child", "time", "year", "week", "day", "way", "thing", "world", "hand", "part", "eye", "place", "work", "case", "government", "company", "number", "group"]
     
     let optimal = ["between", "always", "important", "more", "different", "another", "family", "song", "sound", "number", "people", "watch", "began", "thought", "came", "come", "make", "run", "let", "cut"]
+
+    mutating func updateWord(with category: String) -> String {
+        switch category {
+        case "actors":
+            word = actors.randomElement() ?? ""
+        case "brain":
+            word = brainStorm.randomElement() ?? ""
+        case "friendly":
+            word = friendly.randomElement() ?? ""
+        case "optimal":
+            word = optimal.randomElement() ?? ""
+        default : return "no category"
+        }
+        return word
+    }
 }

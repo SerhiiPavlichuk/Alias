@@ -29,7 +29,7 @@ class CategoryChoiceViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToGame" {
             let destinationVC = segue.destination as! GameViewController
-            destinationVC.categoryName = category
+            destinationVC.categoryName = category ?? ""
         }
     }
 }

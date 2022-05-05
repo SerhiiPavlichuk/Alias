@@ -263,6 +263,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4qN-QI-uE6"/>
+                    <connections>
+                        <outlet property="randomWordLabel" destination="apj-FI-Ugl" id="yM3-w8-PRI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hf-xj-gnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
