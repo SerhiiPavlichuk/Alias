@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845A22DD28244D450079B34D /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DA28244D450079B34D /* JokeManager.swift */; };
-		845A22DE28244D450079B34D /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DB28244D450079B34D /* JokeModel.swift */; };
-		845A22DF28244D450079B34D /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A22DC28244D450079B34D /* JokeData.swift */; };
 		845A22E5282563FE0079B34D /* reset.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845A22E2282563FE0079B34D /* reset.mp3 */; };
 		845A22E6282563FE0079B34D /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845A22E3282563FE0079B34D /* right.mp3 */; };
 		845A22E7282563FE0079B34D /* skip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 845A22E4282563FE0079B34D /* skip.mp3 */; };
@@ -25,12 +22,12 @@
 		847D94722822443A0063AF5F /* JokePresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D94712822443A0063AF5F /* JokePresent.swift */; };
 		8A5760682822F01C0051E2EE /* AliasBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5760672822F01C0051E2EE /* AliasBrain.swift */; };
 		DB0226FB2821755000202873 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0226FA2821755000202873 /* Rules.swift */; };
+		DBF85DD12825725200CC7BEF /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF85DCE2825725200CC7BEF /* JokeData.swift */; };
+		DBF85DD22825725200CC7BEF /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF85DCF2825725200CC7BEF /* JokeManager.swift */; };
+		DBF85DD32825725200CC7BEF /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF85DD02825725200CC7BEF /* JokeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		845A22DA28244D450079B34D /* JokeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
-		845A22DB28244D450079B34D /* JokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
-		845A22DC28244D450079B34D /* JokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
 		845A22E2282563FE0079B34D /* reset.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = reset.mp3; sourceTree = "<group>"; };
 		845A22E3282563FE0079B34D /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
 		845A22E4282563FE0079B34D /* skip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = skip.mp3; sourceTree = "<group>"; };
@@ -48,6 +45,9 @@
 		847D94712822443A0063AF5F /* JokePresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresent.swift; sourceTree = "<group>"; };
 		8A5760672822F01C0051E2EE /* AliasBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliasBrain.swift; sourceTree = "<group>"; };
 		DB0226FA2821755000202873 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		DBF85DCE2825725200CC7BEF /* JokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JokeData.swift; path = ../../../../Desktop/Model/JokeData.swift; sourceTree = "<group>"; };
+		DBF85DCF2825725200CC7BEF /* JokeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JokeManager.swift; path = ../../../../Desktop/Model/JokeManager.swift; sourceTree = "<group>"; };
+		DBF85DD02825725200CC7BEF /* JokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JokeModel.swift; path = ../../../../Desktop/Model/JokeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +125,9 @@
 		DB0226F92821726400202873 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				845A22DC28244D450079B34D /* JokeData.swift */,
-				845A22DA28244D450079B34D /* JokeManager.swift */,
-				845A22DB28244D450079B34D /* JokeModel.swift */,
+				DBF85DCE2825725200CC7BEF /* JokeData.swift */,
+				DBF85DCF2825725200CC7BEF /* JokeManager.swift */,
+				DBF85DD02825725200CC7BEF /* JokeModel.swift */,
 				8A5760672822F01C0051E2EE /* AliasBrain.swift */,
 				DB0226FA2821755000202873 /* Rules.swift */,
 				847D94712822443A0063AF5F /* JokePresent.swift */,
@@ -209,13 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845A22DD28244D450079B34D /* JokeManager.swift in Sources */,
 				847D946E282027650063AF5F /* RulesViewController.swift in Sources */,
+				DBF85DD32825725200CC7BEF /* JokeModel.swift in Sources */,
 				847D9422281EDA5E0063AF5F /* WelcomeViewController.swift in Sources */,
-				845A22DE28244D450079B34D /* JokeModel.swift in Sources */,
-				845A22DF28244D450079B34D /* JokeData.swift in Sources */,
 				8A5760682822F01C0051E2EE /* AliasBrain.swift in Sources */,
+				DBF85DD22825725200CC7BEF /* JokeManager.swift in Sources */,
 				847D946A282007E80063AF5F /* CategoryChoiceViewController.swift in Sources */,
+				DBF85DD12825725200CC7BEF /* JokeData.swift in Sources */,
 				847D941E281EDA5E0063AF5F /* AppDelegate.swift in Sources */,
 				847D947028207D8C0063AF5F /* GameViewController.swift in Sources */,
 				DB0226FB2821755000202873 /* Rules.swift in Sources */,
@@ -367,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VVT5US76Z7;
+				DEVELOPMENT_TEAM = 27V823S952;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alias/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -380,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = serhii.pavlichuk.Alias;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazurich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -395,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VVT5US76Z7;
+				DEVELOPMENT_TEAM = 27V823S952;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Alias/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = serhii.pavlichuk.Alias;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazurich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
