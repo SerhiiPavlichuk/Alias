@@ -16,7 +16,6 @@ class CategoryChoiceViewController: UIViewController {
     }
     
     
-    
     @IBAction func anyButtonPressed(_ sender: UIButton) {
         
         let categoryName = sender.currentTitle

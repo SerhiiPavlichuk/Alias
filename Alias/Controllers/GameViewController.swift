@@ -93,17 +93,10 @@ class GameViewController: UIViewController  {
 }
 
 extension GameViewController: JokeManagerDelegate {
-    
-    func didUpdateJoke(_ jokeManager: JokeManager, joke: JokeModel) {
-        
+    func didUpdateJoke(joke: JokeModel) {
         DispatchQueue.main.async {
             self.firstStringJoke = joke.firstStringJoke
             self.secondStringJoke = joke.secondStringJoke
         }
     }
-    
-    func didFailWithError(error: Error) {
-        print("error")
-    }
 }
-    
