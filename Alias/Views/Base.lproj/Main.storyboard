@@ -14,14 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="Tdz-Ql-5t7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3B-DG-5ca">
+                                <rect key="frame" x="30" y="238" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vf3-gZ-L6z"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u3B-DG-5ca" firstAttribute="leading" secondItem="Vf3-gZ-L6z" secondAttribute="leading" constant="30" id="KaR-K9-mDP"/>
+                            <constraint firstItem="Vf3-gZ-L6z" firstAttribute="trailing" secondItem="u3B-DG-5ca" secondAttribute="trailing" constant="30" id="ufi-ai-Uk6"/>
+                            <constraint firstItem="u3B-DG-5ca" firstAttribute="top" secondItem="Vf3-gZ-L6z" secondAttribute="top" constant="150" id="zmL-Ox-E9r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Kk-ND-3cf"/>
+                    <connections>
+                        <outlet property="rulesLabel" destination="u3B-DG-5ca" id="KPi-Na-GnK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckf-e0-End" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="-579"/>
+            <point key="canvasLocation" x="928.98550724637687" y="-579.24107142857144"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -45,6 +61,9 @@
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="baseBackgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="a8n-Pq-1d9" kind="push" id="Uqp-EZ-q2G"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsv-9X-9Ya">
                                         <rect key="frame" x="0.0" y="112" width="354" height="62"/>
@@ -225,6 +244,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862745098038" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="rPu-Pa-Esz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0O-3z-YPs">
                                         <rect key="frame" x="0.0" y="50" width="374" height="50"/>
@@ -234,6 +256,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="Eux-FP-gUB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-xN-VQa">
                                         <rect key="frame" x="0.0" y="100" width="374" height="50"/>
@@ -243,6 +268,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                             <color key="baseForegroundColor" red="0.0" green="0.72156862749999995" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="r8a-ji-1lX" eventType="touchUpInside" id="72T-GA-lHR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -264,7 +292,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="4qN-QI-uE6"/>
                     <connections>
+                        <outlet property="progressBar" destination="egj-GD-iAN" id="qJi-lM-dNd"/>
                         <outlet property="randomWordLabel" destination="apj-FI-Ugl" id="yM3-w8-PRI"/>
+                        <outlet property="scoreLabel" destination="388-9H-eh8" id="fZh-hl-4hs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hf-xj-gnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
