@@ -50,9 +50,9 @@ class GameViewController: UIViewController  {
     }
     
     @objc func updateTimer() {
-        if secondsPassed <= 60 {
+        if secondsPassed <= remainingSeconds {
             secondsPassed += 1
-            let percentageProgress = Float(secondsPassed) / Float(60)
+            let percentageProgress = Float(secondsPassed) / Float(remainingSeconds)
             progressBar.progress = Float(percentageProgress)
         } else {
             timer.invalidate()
@@ -95,8 +95,8 @@ class GameViewController: UIViewController  {
 extension GameViewController: JokeManagerDelegate {
     func didUpdateJoke(joke: JokeModel) {
         DispatchQueue.main.async {
-            self.firstStringJoke = joke.firstStringJoke
-            self.secondStringJoke = joke.secondStringJoke
+               self.firstStringJoke = joke.firstStringJoke
+               self.secondStringJoke = joke.secondStringJoke
         }
     }
 }

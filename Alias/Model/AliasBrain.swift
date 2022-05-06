@@ -55,12 +55,13 @@ struct AliasBrain {
     }
 
     mutating func audioPlayer(songName: String) {
-        let url = Bundle.main.url(forResource: songName, withExtension: "mp3")
-        do {
-            player = try AVAudioPlayer(contentsOf: url!)
-        } catch {
-            print(error)
+        if let url = Bundle.main.url(forResource: songName, withExtension: "mp3") {
+            do {
+                player = try AVAudioPlayer(contentsOf: url)
+            } catch {
+                print(error)
+            }
+            player.play()
         }
-        player.play()
     }
 }
