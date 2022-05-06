@@ -9,13 +9,13 @@ import UIKit
 
 class RulesViewController: UIViewController {
     
-    @IBOutlet weak var RulesLabel: UILabel!
+    @IBOutlet weak var rulesLabel: UILabel!
     let rules = Rules()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        RulesLabel.numberOfLines = 0
-        RulesLabel.lineBreakMode = .byWordWrapping
-        RulesLabel.text = rules.rules
+        rulesLabel.numberOfLines = 0
+        rulesLabel.lineBreakMode = .byWordWrapping
+        rulesLabel.text = rules.rules
     }
 }

@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import AVFoundation
 
 struct AliasBrain {
 
     var word = ""
+    var score = 0
+    var player: AVAudioPlayer!
     
     let actors = ["Chris Evans", "Robert Downey, Jr.", "Jennifer Lawrence", "Channing Tatum", "George Clooney", "Johnny Depp", "Margot Robbie", "Jared Leto", "Robert De Niro", "Jack Nicholson", "Marlon Brando", "Denzel Washington", "Meryl Streep", "Tom Hanks", "Leonardo DiCaprio", "Morgan Freeman", "Charles Chaplin", "Al Pacino", "Halle Berry", "James Dean"]
     
@@ -32,5 +35,32 @@ struct AliasBrain {
         default : return "no category"
         }
         return word
+    }
+
+    mutating func updateScore(title: String) -> Int {
+        switch title {
+        case "Right!":
+            score += 1
+            audioPlayer(songName: "right")
+        case "Skip":
+            score -= 1
+            audioPlayer(songName: "skip")
+        case "Reset":
+            score = 0
+            audioPlayer(songName: "reset")
+        default:
+            break
+        }
+        return score
+    }
+
+    mutating func audioPlayer(songName: String) {
+        let url = Bundle.main.url(forResource: songName, withExtension: "mp3")
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+        } catch {
+            print(error)
+        }
+        player.play()
     }
 }
