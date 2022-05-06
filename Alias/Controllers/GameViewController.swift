@@ -6,6 +6,7 @@
 //
 import Foundation
 import UIKit
+import Lottie
 
 class GameViewController: UIViewController  {
     
@@ -14,19 +15,20 @@ class GameViewController: UIViewController  {
     @IBOutlet weak var randomWordLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var scoreLabel: UILabel!
-    
+    @IBOutlet weak var animationView: AnimationView!
+
     // MARK: - Properties
     
     var categoryName = ""
-    var aliasBrain = AliasBrain()
-    var timer = Timer()
-    var remainingSeconds = 60
-    var secondsPassed = 0
-    var score = 0
-    var jokeManagerDelegate = JokeManager()
-    var firstStringJoke = ""
-    var secondStringJoke = ""
-    var jokeAlert = JokePresent()
+    private var aliasBrain = AliasBrain()
+    private var timer = Timer()
+    private var remainingSeconds = 60
+    private var secondsPassed = 0
+    private var score = 0
+    private var jokeManagerDelegate = JokeManager()
+    private var firstStringJoke = ""
+    private var secondStringJoke = ""
+    private var jokeAlert = JokePresent()
     
     // MARK: - Lifecycle
     
@@ -39,11 +41,18 @@ class GameViewController: UIViewController  {
         randomWordLabel.text = aliasBrain.updateWord(with: categoryName)
         jokeManagerDelegate.delegate = self
         jokeManagerDelegate.performRequest()
+        animationSetup()
     }
     
     // MARK: - Methods
+
+    private func animationSetup() {
+        animationView.contentMode = .scaleAspectFit
+        animationView.animationSpeed = 0.5
+        animationView.loopMode = .playOnce
+    }
     
-    func getTimer() {
+    private func getTimer() {
         
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target:self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
@@ -63,7 +72,7 @@ class GameViewController: UIViewController  {
         }
     }
     
-    func timerRestart() {
+    private func timerRestart() {
         timer.invalidate()
         progressBar.progress = 0
         secondsPassed = 0
@@ -71,13 +80,16 @@ class GameViewController: UIViewController  {
         
     }
     
-    func update() {
+    private func update() {
         randomWordLabel.text = aliasBrain.updateWord(with: categoryName)
     }
     
-    func jokeShow() {
-        jokeManagerDelegate.performRequest()
-        jokeAlert.showJokeMessage(from: firstStringJoke, and: secondStringJoke, to: self)
+    private func jokeShow() {
+        animationView.play()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+            self.jokeManagerDelegate.performRequest()
+            self.jokeAlert.showJokeMessage(from: self.firstStringJoke, and: self.secondStringJoke, to: self)
+        })
     }
     
     // MARK: - Actions

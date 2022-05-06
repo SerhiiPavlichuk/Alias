@@ -47,9 +47,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ode-Is-4OX">
-                                <rect key="frame" x="95" y="411" width="224" height="74"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-hJ-ykF">
                                 <rect key="frame" x="30" y="658" width="354" height="174"/>
                                 <subviews>
@@ -79,18 +76,41 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xi-wF-NUc" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="30" y="208" width="354" height="392"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Xi-wF-NUc" secondAttribute="height" multiplier="177:196" id="LMK-OP-hJP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="partyAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ode-Is-4OX">
+                                <rect key="frame" x="30" y="88" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3wk-vI-0bs"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ode-Is-4OX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0hY-IF-jEy"/>
+                            <constraint firstItem="9Xi-wF-NUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2cv-yh-Djc"/>
                             <constraint firstItem="bxh-hJ-ykF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Bvh-ym-oIH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bxh-hJ-ykF" secondAttribute="trailing" constant="30" id="EvG-YP-LW2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bxh-hJ-ykF" secondAttribute="bottom" constant="30" id="GHF-nO-ZX8"/>
-                            <constraint firstItem="ode-Is-4OX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mau-5h-xRp"/>
-                            <constraint firstItem="ode-Is-4OX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qtD-gO-1HO"/>
+                            <constraint firstItem="ode-Is-4OX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Klx-lf-0pP"/>
+                            <constraint firstItem="9Xi-wF-NUc" firstAttribute="top" secondItem="ode-Is-4OX" secondAttribute="bottom" constant="20" id="nkO-lM-Gvf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ode-Is-4OX" secondAttribute="trailing" constant="30" id="vaD-Gb-Afy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Xi-wF-NUc" secondAttribute="trailing" constant="30" id="zNp-yL-39g"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DgH-Uf-SZK"/>
+                    <connections>
+                        <outlet property="animationView" destination="9Xi-wF-NUc" id="JWJ-dT-fOi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,6 +294,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-R8-ycy" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="280.5" width="374" height="326"/>
+                                <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wBJ-R8-ycy" secondAttribute="height" multiplier="187:163" id="Pbn-NK-Ihl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="confetti"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OmQ-a1-1y0"/>
                         <color key="backgroundColor" red="1" green="0.91764705882352937" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -285,13 +315,20 @@
                             <constraint firstItem="2Os-eI-UZX" firstAttribute="leading" secondItem="OmQ-a1-1y0" secondAttribute="leading" constant="20" id="PPb-oc-WRK"/>
                             <constraint firstItem="egj-GD-iAN" firstAttribute="top" secondItem="dWZ-Oy-kzK" secondAttribute="bottom" constant="10" id="S6K-Tk-6Sa"/>
                             <constraint firstItem="OmQ-a1-1y0" firstAttribute="trailing" secondItem="dWZ-Oy-kzK" secondAttribute="trailing" constant="20" id="WOx-UE-0hD"/>
+                            <constraint firstItem="wBJ-R8-ycy" firstAttribute="top" secondItem="2Os-eI-UZX" secondAttribute="bottom" constant="35" id="d2B-8p-Uvn"/>
                             <constraint firstItem="egj-GD-iAN" firstAttribute="leading" secondItem="OmQ-a1-1y0" secondAttribute="leading" constant="20" id="dj7-6a-r2q"/>
+                            <constraint firstItem="OmQ-a1-1y0" firstAttribute="trailing" secondItem="wBJ-R8-ycy" secondAttribute="trailing" constant="20" id="egw-zW-aeV"/>
                             <constraint firstItem="OmQ-a1-1y0" firstAttribute="trailing" secondItem="egj-GD-iAN" secondAttribute="trailing" constant="20" id="p1x-sj-KKb"/>
+                            <constraint firstItem="wBJ-R8-ycy" firstAttribute="leading" secondItem="OmQ-a1-1y0" secondAttribute="leading" constant="20" id="qaH-W4-yEV"/>
+                            <constraint firstItem="wBJ-R8-ycy" firstAttribute="top" secondItem="2Os-eI-UZX" secondAttribute="bottom" constant="35" id="uel-6N-DS5"/>
+                            <constraint firstItem="wBJ-R8-ycy" firstAttribute="leading" secondItem="OmQ-a1-1y0" secondAttribute="leading" constant="20" id="uq2-8m-5wp"/>
+                            <constraint firstItem="OmQ-a1-1y0" firstAttribute="trailing" secondItem="wBJ-R8-ycy" secondAttribute="trailing" constant="20" id="vlJ-Zw-v3s"/>
                             <constraint firstItem="2Os-eI-UZX" firstAttribute="top" secondItem="OmQ-a1-1y0" secondAttribute="top" constant="20" id="xzT-98-dCs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4qN-QI-uE6"/>
                     <connections>
+                        <outlet property="animationView" destination="wBJ-R8-ycy" id="Lml-dV-3v2"/>
                         <outlet property="progressBar" destination="egj-GD-iAN" id="qJi-lM-dNd"/>
                         <outlet property="randomWordLabel" destination="apj-FI-Ugl" id="yM3-w8-PRI"/>
                         <outlet property="scoreLabel" destination="388-9H-eh8" id="fZh-hl-4hs"/>
@@ -320,6 +357,9 @@
             <point key="canvasLocation" x="162" y="84"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="wBJ-R8-ycy"/>
+    </designables>
     <resources>
         <image name="Logo" width="224" height="74"/>
         <image name="actors" width="51.5" height="24"/>
