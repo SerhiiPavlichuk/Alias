@@ -83,6 +83,10 @@ class GameViewController: UIViewController  {
     private func update() {
         randomWordLabel.text = aliasBrain.updateWord(with: categoryName)
     }
+
+    private func specialWordUpdate() {
+        randomWordLabel.text = aliasBrain.updateSpecialWord()
+    }
     
     private func jokeShow() {
         animationView.play()
@@ -98,9 +102,17 @@ class GameViewController: UIViewController  {
         if let title = sender.titleLabel?.text {
             scoreLabel.text = "Srore: \(String(aliasBrain.updateScore(title:title)))"
         }
-        update()
-        timerRestart()
-        jokeShow()
+        let random = Int.random(in: 0...100)
+        if random % 3 == 0 {
+            specialWordUpdate()
+            if let title = sender.titleLabel?.text {
+                scoreLabel.text = "Srore: \(String(aliasBrain.updateSpecialScore(title:title)))"
+            }
+        } else {
+            update()
+            timerRestart()
+            jokeShow()
+        }
     }
 }
 

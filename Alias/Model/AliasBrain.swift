@@ -13,6 +13,7 @@ struct AliasBrain {
     var word = ""
     var score = 0
     var player: AVAudioPlayer!
+    var specialWord = ""
     
     let actors = ["Chris Evans", "Robert Downey, Jr.", "Jennifer Lawrence", "Channing Tatum", "George Clooney", "Johnny Depp", "Margot Robbie", "Jared Leto", "Robert De Niro", "Jack Nicholson", "Marlon Brando", "Denzel Washington", "Meryl Streep", "Tom Hanks", "Leonardo DiCaprio", "Morgan Freeman", "Charles Chaplin", "Al Pacino", "Halle Berry", "James Dean"]
     
@@ -21,6 +22,8 @@ struct AliasBrain {
     let friendly = ["person", "woman", "child", "time", "year", "week", "day", "way", "thing", "world", "hand", "part", "eye", "place", "work", "case", "government", "company", "number", "group"]
     
     let optimal = ["between", "always", "important", "more", "different", "another", "family", "song", "sound", "number", "people", "watch", "began", "thought", "came", "come", "make", "run", "let", "cut"]
+
+    let specialWords = ["SPECIAL: Ork", "SPECIAL: Ghot", "SPECIAL: Shoes", "SPECIAL: Dragonfly", "SPECIAL: Spider", "SPECIAL: Map"]
 
     mutating func updateWord(with category: String) -> String {
         switch category {
@@ -63,5 +66,29 @@ struct AliasBrain {
             }
             player.play()
         }
+    }
+
+    mutating func updateSpecialWord() -> String {
+        if let saveWord = specialWords.randomElement() {
+            specialWord = saveWord
+        }
+        return specialWord
+    }
+
+    mutating func updateSpecialScore(title: String) -> Int {
+        switch title {
+        case "Right!":
+            score += 3
+            audioPlayer(songName: "right")
+        case "Skip":
+            score -= 3
+            audioPlayer(songName: "skip")
+        case "Reset":
+            score = 0
+            audioPlayer(songName: "reset")
+        default:
+            break
+        }
+        return score
     }
 }
