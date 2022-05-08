@@ -27,7 +27,7 @@ class CategoryChoiceViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToGame" {
-            let destinationVC = segue.destination as! GameViewController
+            guard let destinationVC = segue.destination as? GameViewController else { return }
             destinationVC.categoryName = category ?? ""
         }
     }

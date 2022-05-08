@@ -23,7 +23,7 @@ struct AliasBrain {
     
     let optimal = ["between", "always", "important", "more", "different", "another", "family", "song", "sound", "number", "people", "watch", "began", "thought", "came", "come", "make", "run", "let", "cut"]
 
-    let specialWords = ["SPECIAL: Ork", "SPECIAL: Ghot", "SPECIAL: Shoes", "SPECIAL: Dragonfly", "SPECIAL: Spider", "SPECIAL: Map"]
+    let specialWords = ["SPECIAL: Ork", "SPECIAL: Ghost", "SPECIAL: Dance", "SPECIAL: Pinguin", "SPECIAL: Happy", "SPECIAL: Depression"]
 
     mutating func updateWord(with category: String) -> String {
         switch category {
